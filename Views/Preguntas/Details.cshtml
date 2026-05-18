@@ -1,0 +1,60 @@
+﻿@model WebApplication1.Models.Pregunta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pregunta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreguntaTexto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreguntaTexto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OpcionA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OpcionA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OpcionB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OpcionB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OpcionC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OpcionC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OpcionD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OpcionD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Correcta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Correcta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Puntos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Puntos)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdPregunta">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
